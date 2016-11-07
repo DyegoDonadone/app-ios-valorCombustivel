@@ -1,4 +1,4 @@
 # app-ios-valorCombustivel
 
-App IOS de calculo do valor de combustiveis 
-fazendo a comparação qual será melhor abastecer.
+App IOS para calculo do valor dos combustiveis,
+fazendo a comparação do qual será melhor abastecer.
