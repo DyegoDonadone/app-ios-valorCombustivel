@@ -12,20 +12,20 @@
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS" colorLabel="IBBuiltInLabel-Green">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Valor da Alcool" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rML-T2-xRi">
                                 <rect key="frame" x="16" y="44" width="115" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Valor da Gasolina" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4jC-sy-0Pg">
                                 <rect key="frame" x="16" y="122" width="135" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qZ4-vW-EXP">
@@ -47,16 +47,14 @@
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gtD-Po-ebM">
-                                <rect key="frame" x="120" y="183" width="81" height="30"/>
-                                <state key="normal" title="CALCULAR">
-                                    <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
+                                <rect key="frame" x="27" y="188" width="81" height="30"/>
+                                <state key="normal" title="CALCULAR"/>
                                 <connections>
                                     <action selector="calcular:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="NyV-dT-fAL"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gqq-Ew-oQZ">
-                                <rect key="frame" x="101" y="226" width="118" height="30"/>
+                                <rect key="frame" x="186" y="188" width="118" height="30"/>
                                 <state key="normal" title="COMPARTILHAR">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -65,7 +63,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Qc-4Z-dwI">
-                                <rect key="frame" x="130" y="264" width="61" height="30"/>
+                                <rect key="frame" x="37" y="225" width="61" height="30"/>
                                 <state key="normal" title="GRAVAR">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -74,12 +72,32 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ya3-bH-hrc">
-                                <rect key="frame" x="119" y="308" width="83" height="30"/>
+                                <rect key="frame" x="32" y="268" width="83" height="30"/>
                                 <state key="normal" title="HISTÓRICO">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="vr0-fH-EGV" kind="show" id="JNI-OO-5hI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2X8-Ve-HP7">
+                                <rect key="frame" x="223" y="225" width="42" height="30"/>
+                                <state key="normal" title="MAPA">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="GeO-7C-aih" kind="show" id="ViY-qY-idc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u3v-YJ-v2h">
+                                <rect key="frame" x="89" y="418" width="143" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="SITE DA EMPRESA">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="tYR-lo-oIg" kind="show" id="0Hf-xj-p2L"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -93,7 +111,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="564" y="430"/>
+            <point key="canvasLocation" x="-1297" y="-148"/>
         </scene>
         <!--Historico View Controller-->
         <scene sceneID="NlC-zE-bXz">
@@ -119,17 +137,20 @@
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3cc-oq-93D">
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WK2-aF-FgF">
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="7wq-N2-Cv0" kind="show" identifier="telaDetalhe" id="Zdi-uw-0ni"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <sections/>
@@ -160,7 +181,201 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U7q-YD-sQz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="939" y="430"/>
+            <point key="canvasLocation" x="-857" y="-446"/>
+        </scene>
+        <!--Detalhes View Controller-->
+        <scene sceneID="YKo-Na-4hw">
+            <objects>
+                <viewController id="7wq-N2-Cv0" customClass="DetalhesViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UHq-bE-UY2"/>
+                        <viewControllerLayoutGuide type="bottom" id="1gM-ct-7Jg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oms-zx-V58">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jWR-rm-U1v">
+                                <rect key="frame" x="139" y="229" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bk2-CZ-CZS">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="Detalhes" id="iQR-LU-DOM">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="reply" id="TOu-q7-VGa">
+                                            <connections>
+                                                <action selector="voltar:" destination="7wq-N2-Cv0" id="ofw-ki-lgz"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hrs-Xf-ZvB">
+                                <rect key="frame" x="135" y="91" width="50" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="lblAlcool" destination="hrs-Xf-ZvB" id="eKE-eO-jAt"/>
+                        <outlet property="lblGasolina" destination="jWR-rm-U1v" id="UaQ-Zp-3ye"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S2c-Zp-ccV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-469" y="-446"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="jD5-8g-RjN">
+            <objects>
+                <viewController id="tYR-lo-oIg" customClass="SiteViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rkk-cQ-dlD"/>
+                        <viewControllerLayoutGuide type="bottom" id="eSf-Tz-Ngl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="muY-4Z-Uxs">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5PQ-Fl-0pu">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="Site" id="fie-HO-o4g">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="reply" id="gTc-v3-p7I">
+                                            <connections>
+                                                <action selector="voltar:" destination="tYR-lo-oIg" id="bxv-Ew-8qa"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BLs-t3-4th">
+                                <rect key="frame" x="0.0" y="44" width="320" height="392"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="delegate" destination="tYR-lo-oIg" id="hKp-rv-PHA"/>
+                                </connections>
+                            </webView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5rY-cc-gOz">
+                                <rect key="frame" x="0.0" y="436" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="EMx-YS-DCG"/>
+                                    <barButtonItem systemItem="rewind" id="GXw-9N-fEO">
+                                        <connections>
+                                            <action selector="goBack" destination="BLs-t3-4th" id="Ut0-c1-SEZ"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Cy5-oh-jPZ"/>
+                                    <barButtonItem systemItem="fastForward" id="e67-yV-8X1">
+                                        <connections>
+                                            <action selector="goForward" destination="BLs-t3-4th" id="MjY-tQ-0ih"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="R0m-Ji-n8F"/>
+                                    <barButtonItem systemItem="stop" id="GIC-eL-0lS">
+                                        <connections>
+                                            <action selector="stopLoading" destination="BLs-t3-4th" id="cpy-le-3xL"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="NZc-Y3-4ke"/>
+                                    <barButtonItem systemItem="refresh" id="1hd-uf-eGI">
+                                        <connections>
+                                            <action selector="reload" destination="BLs-t3-4th" id="HvR-lq-knK"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Arm-BD-x6C"/>
+                                </items>
+                            </toolbar>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="MxO-Mg-8xw">
+                                <rect key="frame" x="142" y="221" width="37" height="37"/>
+                                <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="zdL-mw-C0U"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="spinner" destination="MxO-Mg-8xw" id="R6g-hq-zjb"/>
+                        <outlet property="webSite" destination="BLs-t3-4th" id="TzN-q7-lWi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EEe-WH-h8P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-19" y="-148"/>
+        </scene>
+        <!--Mapa View Controller-->
+        <scene sceneID="oCt-AS-ts7">
+            <objects>
+                <viewController id="GeO-7C-aih" customClass="MapaViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kZ7-vw-cK0"/>
+                        <viewControllerLayoutGuide type="bottom" id="Sxj-NQ-TD9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jju-u4-HI5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mAc-1i-jTH">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="Mapa" id="ylw-FZ-lKb">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="reply" id="mKc-Fm-R6Y">
+                                            <connections>
+                                                <action selector="voltar:" destination="GeO-7C-aih" id="Rjm-8y-nVp"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="vm9-gc-T0H">
+                                <rect key="frame" x="0.0" y="44" width="320" height="384"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WxQ-6E-mag">
+                                <rect key="frame" x="16" y="436" width="37" height="30"/>
+                                <state key="normal" title="ALFA">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="alfa:" destination="GeO-7C-aih" eventType="touchUpInside" id="N8J-wM-F0W"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gEC-lx-wph">
+                                <rect key="frame" x="79" y="436" width="106" height="30"/>
+                                <state key="normal" title="ONDE ESTOU?">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="ondeEstou:" destination="GeO-7C-aih" eventType="touchUpInside" id="BAL-XU-JcS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nZE-5I-c5D">
+                                <rect key="frame" x="202" y="436" width="102" height="30"/>
+                                <state key="normal" title="MUDAR MAPA">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="mudarTipo:" destination="GeO-7C-aih" eventType="touchUpInside" id="PlZ-lX-Thy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="mapa" destination="vm9-gc-T0H" id="aWz-QV-Pcv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dxt-VP-rY1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-857" y="134"/>
         </scene>
     </scenes>
 </document>
